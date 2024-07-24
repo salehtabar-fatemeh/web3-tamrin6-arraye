@@ -7,7 +7,27 @@
 </head>
 <body>
     <script>
-        
+        // const nums = [11,2,4,7,30,0,5,20];
+        // for(let i= 0; i<3 ; i=5 ){
+        //     document.write("max number is ", nums[4], "and ");
+        //     document.write("min number is ", nums[5]);
+        // }
+        //const nums = [1,200,4,50,7,1,5,134,22,836,3];
+        const nums = [11,2,4,7,30,0,5,20];
+        let max = nums[0];
+        let min = nums[0];
+        for(let i= 0; i<nums.length ; i++ ){
+            if(nums[i]<min){
+                min = nums[i]
+            }
+            if(nums[i]>max){
+                max = nums[i]
+            }
+            
+        }
+        document.write("Max is "+ max + " and" + "min is " + min );
+    
+
     </script>
     
 </body>
